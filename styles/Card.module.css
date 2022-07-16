@@ -1,0 +1,63 @@
+.wrapper {
+  /* padding: 5px; */
+  border: 1px solid lightgrey;
+  border-radius: 15px;
+  margin: 10px 0;
+  background: var(--bgColor1);
+}
+
+.wrapper .top {
+  width: 100%;
+  aspect-ratio: 5/4;
+  background: var(--linearbg2);
+  border-radius: 15px;
+  padding: 10px;
+  text-align: center;
+  min-width: 200px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 150%;
+  font-weight: bold;
+}
+
+.icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.name {
+  font-weight: bold;
+  font-size: 110%;
+  margin: 5px 0;
+}
+
+.time {
+  font-size: initial;
+  font-weight: initial;
+  font-size: 30%;
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  background: white;
+  padding: 2px 5px;
+  border-radius: 3px;
+}
+
+.bottom {
+  display: flex;
+  gap: 35px;
+  justify-content: space-between;
+  margin: 7px 0;
+  align-items: center;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.bottom .right {
+  text-align: right;
+}

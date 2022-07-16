@@ -1,0 +1,199 @@
+.main {
+  display: flex;
+  align-items: flex-start;
+}
+
+.main .right {
+  padding: 15px;
+  width: 100%;
+  max-height: 100vh;
+  padding-left: 21%;
+}
+
+.main .right .top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.action {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+.action span {
+  cursor: pointer;
+}
+
+.main .right .bismillah {
+  text-align: center;
+}
+.name div:nth-child(2) {
+  padding-top: 5px;
+  margin-left: 10px;
+}
+.heading {
+  font-weight: bold;
+  font-size: 120%;
+}
+
+.chapters,
+.verses {
+  position: relative;
+}
+
+.current__chapter,
+.current__verse,
+.name {
+  border: 1px solid white;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.more__chapters,
+.more__verses {
+  background-color: white;
+  position: absolute;
+  z-index: 1;
+  padding: 10px 0;
+  border-radius: 10px;
+  border: 1px solid lightgrey;
+  max-height: 95vh;
+  overflow-y: scroll;
+}
+
+.more__chapters input,
+.more__verses input {
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  /* border: 1px solid lightgrey; */
+  border-bottom: 1px solid lightgrey;
+  margin-top: -12px;
+}
+
+.more__verses input {
+  max-width: 90px;
+}
+
+.item {
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.chapters .more__chapters .item:hover {
+  background-color: var(--transparentBlue);
+
+  /* border-radius: 10px; */
+}
+
+.more__verses .item:hover {
+  background-color: rgb(59, 160, 255, 0.2);
+}
+
+.chapter__verse {
+  background: white;
+  margin: 10px 0;
+  border-radius: 15px;
+  padding: 10px;
+  position: relative;
+}
+
+.verse__order {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  font-weight: bold;
+  color: var(--color1);
+}
+
+.verse__arabic {
+  text-align: right;
+  padding-left: 28px;
+  font-size: 130%;
+}
+
+.verse__meaning {
+  text-align: left;
+  margin: 10px 0;
+}
+
+.verse__translator {
+  text-align: right;
+  font-weight: 550;
+  border-bottom: 1px solid rgb(255, 153, 0, 0.1);
+  padding-bottom: 5px;
+}
+
+.change {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.change .each {
+  border: 1px solid lightgrey;
+  border-radius: 10px;
+  padding: 5px 10px;
+  background: white;
+  margin-bottom: 25px;
+  cursor: pointer;
+}
+
+@media (max-width: 960px) {
+  .main .right {
+    padding-left: 25.5%;
+  }
+}
+
+@media (max-width: 760px) {
+  .main .right {
+    padding-left: 11.5%;
+  }
+}
+
+@media (max-width: 480px) {
+  .current__chapter,
+  .current__verse,
+  .name {
+    border: 1px solid white;
+    padding: 5px;
+    border-radius: 0px;
+    cursor: pointer;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    min-height: 40px;
+    max-height: 40px;
+  }
+
+  .more__chapters,
+  .more__verses {
+    background-color: white;
+    position: absolute;
+    z-index: 1;
+    padding: 10px 0;
+    border-radius: 0px;
+    border: 1px solid lightgrey;
+    max-height: 95vh;
+    overflow-y: scroll;
+  }
+
+  .more__chapters input,
+  .more__verses input {
+    padding: 10px;
+    border-radius: 0px;
+    border: none;
+    /* border: 1px solid lightgrey; */
+    border-bottom: 1px solid lightgrey;
+    margin-top: -12px;
+  }
+}

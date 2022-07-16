@@ -1,0 +1,23 @@
+.wrapper {
+  margin: 10px 0;
+  overflow-x: scroll;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  padding: 5px 0;
+}
+
+.wrapper::-webkit-scrollbar {
+  height: 0;
+}
+
+.wrapper .surah {
+  min-width: 100px;
+  background: white;
+  border-radius: 15px;
+  padding: 5px;
+  text-align: center;
+  cursor: pointer;
+}

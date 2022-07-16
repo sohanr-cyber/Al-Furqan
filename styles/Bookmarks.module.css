@@ -1,0 +1,94 @@
+.main .right {
+  padding: 15px;
+  width: 100%;
+  max-height: 100vh;
+  padding-left: 21%;
+}
+
+.heading {
+  font-weight: bold;
+  font-size: 120%;
+  margin: 10px;
+}
+
+.surahs {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  margin: 10px 0;
+}
+
+.arabic {
+  padding-right: 15px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.verse {
+  border: 1px solid lightgray;
+  border-radius: 15px;
+  padding: 10px;
+  position: relative;
+  cursor: pointer;
+  margin: 10px 0;
+  background: white;
+}
+
+.verse .ref {
+  font-weight: bold;
+}
+
+.icon {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  z-index: 2;
+  cursor: pointer;
+}
+
+@media (max-width: 970px) {
+  .surahs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .surahs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .surahs {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    margin: 5px 0;
+  }
+}
+
+@media (max-width: 960px) {
+  .main .right {
+    padding-left: 25.5%;
+  }
+}
+
+@media (max-width: 760px) {
+  .main .right {
+    padding-left: 11.5%;
+  }
+}
