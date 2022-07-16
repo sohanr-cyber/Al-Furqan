@@ -3,7 +3,6 @@ import styles from "../styles/Bookmarks.module.css";
 import Head from "next/head";
 import Left from "../components/Left";
 import Card from "../components/Card";
-import BookmarkBorderIcon from "@mui/icons-material/BookmarkBorder";
 import BookmarkIcon from "@mui/icons-material/Bookmark";
 import { useDispatch, useSelector } from "react-redux";
 import { removeFromBookmark } from "../redux/bookmarkSlicer";
